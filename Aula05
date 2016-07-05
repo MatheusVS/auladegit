@@ -1,0 +1,32 @@
+create database dbmercado;
+
+use dbmercado;
+
+create table produto(
+
+	id int primary key not null auto_increment,
+	nome varchar (50),
+	preco double,
+	quantidade int
+);
+
+create table pessoa(
+
+	id int primary key not null auto_increment,
+	nome varchar(100),
+	idade int,
+	cidade varchar(100)
+);
+
+select * from produto;
+select * from pessoa;
+
+insert into produto values(1,'Tenis', 70.00, 30);
+insert into produto values(2,'Chinelo', 10.50, 80);
+insert into produto values(3,'Luva', 5.50, 55);
+
+insert into pessoa values(1,'Denis', 45, 'Paulo Lopes');
+insert into pessoa values(2,'Maria', 23, 'Florianópolis');
+insert into pessoa values(3,'João', 19, 'Biguaçu');
+
+
